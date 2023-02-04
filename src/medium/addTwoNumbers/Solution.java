@@ -1,4 +1,4 @@
-package mediaum.addTwoNumbers;
+package medium.addTwoNumbers;
 
 /**
  * Definition for singly-linked list.
