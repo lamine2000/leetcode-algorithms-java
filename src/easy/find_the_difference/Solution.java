@@ -2,16 +2,15 @@ package easy.find_the_difference;
 
 public class Solution {  
   public static char findTheDifference(String s, String t) {
-    int sum1 = 0;
-    int sum2 = 0;
+    int sum = 0;
     
     for(byte b : s.getBytes())
-      sum1 += b;
+      sum += b;
     
     for(byte b : t.getBytes())
-      sum2 += b;
+      sum -= b;
     
-    return (char)(sum2 - sum1);
+    return (char)(-sum);
   }
   
   public static void main(String[] args){
